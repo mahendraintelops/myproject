@@ -10,6 +10,20 @@ COPY . ./
 # Build the application
 RUN dotnet publish -c Release -o out
 
+# Label the container
+LABEL maintainer="MB <mahendra.b@intelops.dev>"
+LABEL repository="https://github.com/mahendraintelops/myproject"
+LABEL homepage="https://github.com/mahendraintelops/myproject"
+
+# Label as GitHub action
+LABEL com.github.actions.name=""
+# Limit to 160 characters
+LABEL com.github.actions.description="The description of your GitHub Action."
+# See branding:
+# https://docs.github.com/actions/creating-actions/metadata-syntax-for-github-actions#branding
+LABEL com.github.actions.icon="activity"
+LABEL com.github.actions.color="orange"
+
 # Use the official .NET 7 runtime image as the base image for the final image
 FROM mcr.microsoft.com/dotnet/aspnet:7.0
 
