@@ -16,7 +16,7 @@ LABEL repository="https://github.com/mahendraintelops/myproject"
 LABEL homepage="https://github.com/mahendraintelops/myproject"
 
 # Label as GitHub action
-LABEL com.github.actions.name=""
+LABEL com.github.actions.name="The name of your GitHub Action"
 # Limit to 160 characters
 LABEL com.github.actions.description="The description of your GitHub Action."
 # See branding:
