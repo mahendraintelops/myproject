@@ -65,7 +65,7 @@ jobs:
         with:
           # relative path to the place where source code with Dockerfile is located
           context: ./UserService
-          # Note: tags has to be all lower-case
+          # Note: tags have to be all lower-case
           tags: ${{ env.REGISTRY }}/${{ github.repository }}/userservice:${{ github.run_id }}
           # ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
